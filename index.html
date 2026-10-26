@@ -4,15 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Ashish | Portfolio</title>
-
-    <link rel="stylesheet" href="port.css">
-    
+    <link rel="stylesheet" href="2.css">
 </head>
-
 <body>
-    
 
     <!-- Navigation -->
     <header>
@@ -25,144 +20,114 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                
             </ul>
-           
+
+            <!-- Dark Mode Toggle Button -->
+            <button id="darkBtn" class="theme-btn" aria-label="Toggle Theme">🌙</button>
         </nav>
     </header>
 
-
-    <!-- Home -->
+    <!-- Home Hero Section -->
     <section id="home" class="hero">
-
         <div class="hero-text">
             <p class="small-text">Hello, I'm</p>
-
             <h1>Ashish Mandal</h1>
-
             <h2>ISE Student & Developer</h2>
-
             <p>
                 I am learning web development and programming,
                 and I love building useful projects.
             </p>
-
             <div class="buttons">
                 <a href="#projects" class="btn">View Projects</a>
                 <a href="#contact" class="btn outline">Contact Me</a>
             </div>
         </div>
-
     </section>
 
-
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="section">
-
         <h2>About Me</h2>
-
         <p>
             I am an Information Science and Engineering student
             interested in software development, web development
             and technology.
         </p>
-
         <p>
             Currently, I am improving my programming skills and
             building projects to gain practical experience.
         </p>
-
     </section>
 
-
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills" class="section">
-
         <h2>My Skills</h2>
-
         <div class="skills-container">
-
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
             <div class="skill">JavaScript</div>
             <div class="skill">C++</div>
             <div class="skill">Python</div>
             <div class="skill">Git</div>
-
         </div>
-
     </section>
 
-
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
-
         <h2>My Projects</h2>
 
+        <!-- Category Filters -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="c">C / C++</button>
+            <button class="filter-btn" data-filter="js">JavaScript</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+        </div>
+
         <div class="projects-container">
-
-            <div class="project-card">
+            <div class="project-card" data-category="c">
                 <h3>Number Hunter</h3>
-
                 <p>
                     A C programming guessing game where the player
                     tries to find a randomly generated number.
                 </p>
-
-                <span>C</span>
+                <span class="tag">C</span>
             </div>
 
-
-            <div class="project-card">
+            <div class="project-card" data-category="js">
                 <h3>To-Do App</h3>
-
                 <p>
                     A JavaScript application for adding,
                     completing and deleting tasks.
                 </p>
-
-                <span>JavaScript</span>
+                <span class="tag">JavaScript</span>
             </div>
 
-
-            <div class="project-card">
+            <div class="project-card" data-category="web">
                 <h3>Portfolio Website</h3>
-
                 <p>
                     My personal portfolio website showcasing
                     my skills, projects and learning journey.
                 </p>
-
-                <span>HTML • CSS • JS</span>
+                <span class="tag">HTML • CSS • JS</span>
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="section contact">
-
         <h2>Contact Me</h2>
-
         <p>Have a project or opportunity? Let's connect.</p>
-
         <div class="contact-info">
             <p>📧 Email: mandalashiah10@gmail.com</p>
             <p>📱 Phone: +91 8927164890</p>
         </div>
-
     </section>
-
 
     <!-- Footer -->
     <footer>
         <p>© 2026 Ashish Mandal. All rights reserved.</p>
     </footer>
-    <script src="app.js"></script>
 
-
-
+    <script src="3.js"></script>
 </body>
 </html>
