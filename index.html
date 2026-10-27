@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashish | Portfolio</title>
+    <meta name="description" content="Ashish Mandal's portfolio showcasing web development projects, technical skills, and internship experience at Good Fellow Consultancy.">
+    <title>Ashish Mandal | Portfolio</title>
     <link rel="stylesheet" href="port.css">
 </head>
 <body>
@@ -17,26 +18,34 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <!-- Dark Mode Toggle Button -->
-            <button id="darkBtn" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+            <!-- Dark Mode Toggle -->
+            <button id="darkBtn" class="theme-btn"
+                    aria-label="Toggle Theme">🌙</button>
         </nav>
     </header>
 
-    <!-- Home Hero Section -->
+    <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-text">
             <p class="small-text">Hello, I'm</p>
+
             <h1>Ashish Mandal</h1>
-            <h2>ISE Student & Developer</h2>
+
+            <h2>ISE Student & Aspiring Developer</h2>
+
             <p>
-                I am learning web development and programming,
-                and I love building useful projects.
+                I am an Information Science and Engineering student
+                and a Technical & SEO Intern at Good Fellow Consultancy
+                (GFC). I enjoy building websites, exploring SEO, and
+                improving my development skills through real-world projects.
             </p>
+
             <div class="buttons">
                 <a href="#projects" class="btn">View Projects</a>
                 <a href="#contact" class="btn outline">Contact Me</a>
@@ -47,20 +56,60 @@
     <!-- About Section -->
     <section id="about" class="section">
         <h2>About Me</h2>
+
         <p>
             I am an Information Science and Engineering student
-            interested in software development, web development
+            passionate about web development, software engineering,
             and technology.
         </p>
+
         <p>
-            Currently, I am improving my programming skills and
-            building projects to gain practical experience.
+            Currently, I am working as a Technical & SEO Intern at
+            Good Fellow Consultancy (GFC), where I gain practical
+            experience in website development, SEO, and website management.
         </p>
+
+        <p>
+            I have developed a Bullion Marketing website for my company
+            and continue to learn new technologies by working on
+            practical projects and solving technical problems.
+        </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>My Experience</h2>
+
+        <div class="project-card">
+            <h3>Technical & SEO Intern</h3>
+
+            <h4>Good Fellow Consultancy (GFC)</h4>
+
+            <p>Industry: Hospitality Marketing & Digital Solutions</p>
+
+            <p>
+                Working on website-related tasks, SEO activities,
+                and digital optimization while gaining practical
+                industry experience.
+            </p>
+
+            <ul>
+                <li>Website development and website management.</li>
+                <li>SEO research and optimization activities.</li>
+                <li>Google Business Profile management.</li>
+                <li>Development of the Bullion Marketing website.</li>
+            </ul>
+
+            <span class="tag">Website Development</span>
+            <span class="tag">SEO</span>
+            <span class="tag">Digital Marketing</span>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section">
         <h2>My Skills</h2>
+
         <div class="skills-container">
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
@@ -68,6 +117,8 @@
             <div class="skill">C++</div>
             <div class="skill">Python</div>
             <div class="skill">Git</div>
+            <div class="skill">SEO</div>
+            <div class="skill">WordPress</div>
         </div>
     </section>
 
@@ -75,59 +126,129 @@
     <section id="projects" class="section">
         <h2>My Projects</h2>
 
-        <!-- Category Filters -->
+        <!-- Project Category Filters -->
         <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="c">C / C++</button>
-            <button class="filter-btn" data-filter="js">JavaScript</button>
-            <button class="filter-btn" data-filter="web">Web Dev</button>
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="c">
+                C / C++
+            </button>
+
+            <button class="filter-btn" data-filter="js">
+                JavaScript
+            </button>
+
+            <button class="filter-btn" data-filter="web">
+                Web Development
+            </button>
         </div>
 
         <div class="projects-container">
+
+            <!-- Bullion Marketing Website -->
+            <div class="project-card" data-category="web">
+                <h3>Bullion Marketing Website</h3>
+
+                <p>
+                    Developed a bullion marketing website for
+                    Good Fellow Consultancy (GFC) as part of my
+                    internship, gaining practical experience in
+                    website development and digital optimization.
+                </p>
+
+                <span class="tag">Web Development</span>
+                <span class="tag">SEO</span>
+                <span class="tag">Company Project</span>
+
+                <div class="buttons">
+                    <a href="https://bullionmarketing.in/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        View Live Website ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Number Hunter -->
             <div class="project-card" data-category="c">
                 <h3>Number Hunter</h3>
+
                 <p>
                     A C programming guessing game where the player
                     tries to find a randomly generated number.
                 </p>
+
                 <span class="tag">C</span>
             </div>
 
+            <!-- To-Do App -->
             <div class="project-card" data-category="js">
                 <h3>To-Do App</h3>
+
                 <p>
                     A JavaScript application for adding,
-                    completing and deleting tasks.
+                    completing, and deleting tasks.
                 </p>
+
                 <span class="tag">JavaScript</span>
             </div>
 
+            <!-- Portfolio Website -->
             <div class="project-card" data-category="web">
                 <h3>Portfolio Website</h3>
+
                 <p>
                     My personal portfolio website showcasing
-                    my skills, projects and learning journey.
+                    my skills, projects, experience, and
+                    development journey.
                 </p>
-                <span class="tag">HTML • CSS • JS</span>
+
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
             </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <h2>Contact Me</h2>
-        <p>Have a project or opportunity? Let's connect.</p>
+
+        <p>
+            Have a project or opportunity?
+            Let's connect and build something useful.
+        </p>
+
         <div class="contact-info">
-            <p>📧 Email: mandalashiah10@gmail.com</p>
-            <p>📱 Phone: +91 8927164890</p>
+            <p>
+                📧 Email:
+                <a href="mailto:mandalashiah10@gmail.com">
+                    mandalashiah10@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱 Phone:
+                <a href="tel:+918927164890">
+                    +91 8927164890
+                </a>
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Ashish Mandal. All rights reserved.</p>
+        <p>
+            © 2026 Ashish Mandal. All rights reserved.
+        </p>
     </footer>
 
+    <!-- JavaScript -->
     <script src="app.js"></script>
+
 </body>
 </html>
